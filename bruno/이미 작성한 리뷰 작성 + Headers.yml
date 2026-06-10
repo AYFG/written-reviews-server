@@ -1,0 +1,43 @@
+info:
+  name: 이미 작성한 리뷰 작성 + Headers
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: https://shopping.naver.com/popup/reviews/api/contents/reviews
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: User-Agent
+      value: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+    - name: Referer
+      value: https://shopping.naver.com/my/writable-reviews
+    - name: Origin
+      value: https://shopping.naver.com
+    - name: X-Requested-With
+      value: XMLHttpRequest
+    - name: Cookie
+      value: SRT30=1773792484; NACT=1; NAC=T3egCACcekNwB; NID_AUT=cQLlatd4WSNM0G+TO/eUfvebs9ZVnB3xWPRyOK2se4IRV9GQcoYcsPGLAY0M7s0u; NID_SES=AAABxnjBFt61iXT41X3K6jqmqiNeQF8vMHj/A2p2Dii6V0OfsdSERU+BfKVRQ6Q8gwDbpPAA866+GR6+JkBST8L3mZnPrY4PNk+e6TcmfZ3KO/uIKzFUgD3bl+DAiiQCO/lEf0Bo1h/YXbDmk+YyI7uhuG6FPO3Sz/lL43wEnW9BMbx4CUYKmxosQMa2WoeNdXw5nXEfgidZon0kytLeC8epFZpQ+axK5EOqL7V23mGO3cfTfF7luzEQB/jENbKevO4+ypaopygDO8u1flwkk/2akjuF74lJAooC2RybHio6RiYOFXSULw4sc9a9KTJp0kA6h295rP2okwbR9hv7rMhlpQ8gxs5255Zpo8F2KYZUz3xcSn2mKp1UthLr65AkeImqClauc9CDNs9rPTra8n0DENfIEBtq1rRPvxtX47+kaGAXpaVxb8djRUu6HhwpIdgVAG6+5MjjvtPzExJdl3KmpTC2fPaHfSVtQ9oP3l3Di+aL0pomgG1KqPVZk8Q6+1iYohOXyYqlDv0liwKLivkO2GS+bdwdYwUi5Uxqz2DT2+9VXWSP0mw2KzDpglB2EmxzZdgmhjF6fcmj2rn1YbhAyjXvfoYnllT4R2T5ihoJI5NX; SRT5=1773793803; BUC=YO06MKBHF1uloIexeQoJi0kzLfg2jBpR4KyEP_rTVGs=; NNB=2EWS74SA724GS; nid_inf=1078592548
+  body:
+    type: json
+    data: |-
+      {
+      "id":0,
+      "orderNo":"2026021959778491",
+      "productOrderNo":"2026021936496061",
+      "reviewScore":5,
+      "reviewEvaluationValueIds":[],
+      "subReviewEvaluationValueIds":[],
+      "reviewContent":"적당히 도톰해서 좋아요.",
+      "reviewAttaches":[],
+      "writeLocationType":"PC",
+      "reviewUserInfoValues":[]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

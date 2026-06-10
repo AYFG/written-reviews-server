@@ -1,0 +1,31 @@
+info:
+  name: 네이버 리뷰 작성
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: https://shopping.naver.com/popup/reviews/api/contents/reviews
+  body:
+    type: json
+    data: |-
+      {
+      "id":0,
+      "orderNo":"2026021959778491",
+      "productOrderNo":"2026021936496061",
+      "reviewScore":5,
+      "reviewEvaluationValueIds":[],
+      "subReviewEvaluationValueIds":[],
+      "reviewContent":"적당히 도톰해서 좋아요.",
+      "reviewAttaches":[],
+      "writeLocationType":"PC",
+      "reviewUserInfoValues":[]
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: This request retrieves a list of users from the JSONPlaceholder API.

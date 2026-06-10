@@ -1,0 +1,26 @@
+{
+  "name": "written-reviews-server",
+  "version": "1.0.0",
+  "description": "네이버 작성 완료 리뷰 크롤러 및 수정 API 서버",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js"
+  },
+  "keywords": [
+    "naver",
+    "crawling",
+    "reviews"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.13.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mysql2": "^3.6.0",
+    "puppeteer": "^21.0.0"
+  }
+}
